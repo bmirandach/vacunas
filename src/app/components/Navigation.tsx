@@ -1,15 +1,15 @@
 'use client'
 
-import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { useState } from "react";
 
-export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarBrand>Vacunapp</NavbarBrand>
+        <NavbarBrand>Vacunas</NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
@@ -20,14 +20,14 @@ export default function Navigation() {
           <Link href="#" color="foreground">Acerca de</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href="#" radius="md" variant="flat" className="bg-primary-btn text-[#fafafa] text-base">
+          <Button as={Link} href="#" radius="md" variant="flat" className="bg-green text-white text-base">
             Iniciar sesión
           </Button>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         <NavbarMenuItem>
-          <Button as={Link} href="#" radius="md" variant="flat" className="bg-primary-btn text-[#fafafa] text-base">
+          <Button as={Link} href="#" radius="md" variant="flat" className="bg-green text-white text-base">
             Iniciar sesión
           </Button>
         </NavbarMenuItem>
@@ -48,3 +48,5 @@ export default function Navigation() {
     </Navbar>
   )
 }
+
+export default Navigation;

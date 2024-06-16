@@ -12,8 +12,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'background': '#cbe7ed',
-        'primary-btn': '#1F778A',
+        background: '#cbe7ed',
+        green: '#1F778A',
+        white: '#e5e7eb',
       },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

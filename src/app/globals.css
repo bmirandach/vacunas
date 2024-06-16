@@ -1,3 +1,141 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.theme-light {
+  --brand-primary: rgb(47, 112, 193);
+  --brand-secondary: rgb(116, 97, 195);
+  --brand-alternative: rgb(19, 120, 134);
+  --background-site: rgb(249, 249, 249);
+  --background-code: rgb(244, 244, 244);
+  --text-body: rgb(54, 49, 61);
+  --text-comment: rgb(99, 94, 105);
+  --text-high-contrast: rgb(49, 49, 49);
+  --text-medium-contrast: rgb(99, 94, 105);
+  --text-low-contrast: rgb(116, 109, 118);
+  --detail-high-contrast: rgb(192, 192, 192);
+  --detail-medium-contrast: rgb(234, 234, 234);
+  --detail-low-contrast: rgb(240, 240, 242);
+  --admonition-note: rgb(46, 109, 188);
+  --admonition-warning: rgb(255, 196, 9);
+  --admonition-danger: rgb(220, 38, 38);
+  --brand-primary-rgb-value: 47, 112, 193;
+  --brand-secondary-rgb-value: 116, 97, 195;
+  --brand-alternative-rgb-value: 19, 120, 134;
+  --background-site-rgb-value: 249, 249, 249;
+  --background-code-rgb-value: 244, 244, 244;
+  --text-body-rgb-value: 54, 49, 61;
+  --text-comment-rgb-value: 99, 94, 105;
+  --text-high-contrast-rgb-value: 49, 49, 49;
+  --text-medium-contrast-rgb-value: 99, 94, 105;
+  --text-low-contrast-rgb-value: 116, 109, 118;
+  --detail-high-contrast-rgb-value: 192, 192, 192;
+  --detail-medium-contrast-rgb-value: 234, 234, 234;
+  --detail-low-contrast-rgb-value: 240, 240, 242;
+  --admonition-note-rgb-value: 46, 109, 188;
+  --admonition-warning-rgb-value: 255, 196, 9;
+  --admonition-danger-rgb-value: 220, 38, 38;
+}
+.theme-dark {
+  --brand-primary: rgb(138, 180, 248);
+  --brand-secondary: rgb(193, 168, 226);
+  --brand-alternative: rgb(136, 186, 191);
+  --background-site: rgb(0, 0, 0);
+  --background-code: rgb(12, 12, 12);
+  --text-body: rgb(222, 222, 222);
+  --text-comment: rgb(170, 170, 170);
+  --text-high-contrast: rgb(230, 230, 230);
+  --text-medium-contrast: rgb(202, 202, 202);
+  --text-low-contrast: rgb(170, 170, 170);
+  --detail-high-contrast: rgb(101, 101, 101);
+  --detail-medium-contrast: rgb(25, 25, 25);
+  --detail-low-contrast: rgb(21, 21, 21);
+  --admonition-note: rgb(138, 180, 248);
+  --admonition-warning: rgb(253, 186, 116);
+  --admonition-danger: rgb(220, 38, 38);
+  --brand-primary-rgb-value: 138, 180, 248;
+  --brand-secondary-rgb-value: 193, 168, 226;
+  --brand-alternative-rgb-value: 136, 186, 191;
+  --background-site-rgb-value: 0, 0, 0;
+  --background-code-rgb-value: 12, 12, 12;
+  --text-body-rgb-value: 222, 222, 222;
+  --text-comment-rgb-value: 170, 170, 170;
+  --text-high-contrast-rgb-value: 230, 230, 230;
+  --text-medium-contrast-rgb-value: 202, 202, 202;
+  --text-low-contrast-rgb-value: 170, 170, 170;
+  --detail-high-contrast-rgb-value: 101, 101, 101;
+  --detail-medium-contrast-rgb-value: 25, 25, 25;
+  --detail-low-contrast-rgb-value: 21, 21, 21;
+  --admonition-note-rgb-value: 138, 180, 248;
+  --admonition-warning-rgb-value: 253, 186, 116;
+  --admonition-danger-rgb-value: 220, 38, 38;
+}
+
+
+.embla__button {
+  -webkit-tap-highlight-color: rgba(230, 230, 230, 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+  color: rgb(34, 51, 50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.embla__dot {
+  -webkit-tap-highlight-color: rgba(230, 230, 230, 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.embla__dot:after {
+  box-shadow: inset 0 0 0 0.2rem rgb(234, 234, 234);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: '';
+}
+
+.embla__dot--selected:after {
+  box-shadow: inset 0 0 0 0.2rem #1F778A;
+}
+
+ul.vaccine-list li {
+  padding-left: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+ul.vaccine-list li::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  left: 0;
+  top: 3px;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23cbe7ed' width='20px' height='20px' viewBox='0 0 24 24' id='medical-insurance' data-name='Line Color' xmlns='http://www.w3.org/2000/svg' class='icon line-color'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath id='secondary' d='M12,14V10m2,2H10' style='fill: none; stroke: %23cbe7ed; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;'%3E%3C/path%3E%3Cpath id='primary' d='M19,5a1,1,0,0,1,1,1V9.54a12.31,12.31,0,0,1-7.61,11.38,1,1,0,0,1-.78,0A12.31,12.31,0,0,1,4,9.54V6A1,1,0,0,1,5,5a12.6,12.6,0,0,0,7-2A12.6,12.6,0,0,0,19,5Z' style='fill: none; stroke: %23cbe7ed; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}

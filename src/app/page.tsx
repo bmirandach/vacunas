@@ -1,8 +1,42 @@
-import Image from "next/image";
+import { Button, Card, CardBody, CardHeader } from "@nextui-org/react";
+import SelectConditions from "./components/SelectVaccines";
+import Stages from "./components/Stages";
+
+
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="max-w-5xl m-auto min-h-screen  p-6 sm:py-24 sm:px-6">
+      <article className="w-full flex flex-col gap-4 items-center md:grid md:grid-cols-3 md:content-stretch">
+        <Card shadow="none" fullWidth className="bg-green p-6 gap-4 md:h-full">
+          <CardHeader className="flex justify-center p-0">
+            <h1 className="text-white text-lg font-semibold">Calendario de vacunación</h1>
+          </CardHeader>
+          <CardBody className="p-0">
+            <Button variant="bordered" radius="md" className="text-white text-base">Consultar</Button>
+          </CardBody>
+        </Card>
+        <Stages />
+        <Card shadow="none" fullWidth className="p-6 gap-4 md:col-span-2">
+          <CardHeader className="p-0">
+            <h1 className="text-lg font-semibold">Información sobre las vacunas</h1>
+          </CardHeader>
+          <CardBody className="p-0">
+            <SelectConditions></SelectConditions>
+          </CardBody>
+        </Card>
+        <Card shadow="none" fullWidth className="p-6 gap-4">
+          <CardHeader className="p-0">
+            <h1 className="text-lg font-semibold">Contraindicaciones</h1>
+          </CardHeader>
+          <CardBody className="p-0">
+            <SelectConditions></SelectConditions>
+          </CardBody>
+        </Card>
+      </article>
+      
+      
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
