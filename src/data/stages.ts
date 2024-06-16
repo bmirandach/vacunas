@@ -38,7 +38,7 @@ export const stages: Stage[] = [
     vaccines: ["Meningococo", "Varicela", "Antigripal", "Quíntuple",],
     description: ["15 meses", "15 meses", "Hasta los 24 meses", "15 - 18 meses"],
     vaccines_ex: ["Fiebre amarilla"],
-    description_ex: ["18 meses, Residentes en zonas de riesgo"]
+    description_ex: ["18 meses. Residentes en zonas de riesgo"]
   },
   {
     name: "5 años",

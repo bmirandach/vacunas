@@ -1,5 +1,5 @@
 import { Button, Card, CardBody, CardHeader } from "@nextui-org/react";
-import SelectConditions from "./components/SelectVaccines";
+import SelectVaccines from "./components/SelectVaccines";
 import Stages from "./components/Stages";
 
 
@@ -23,7 +23,7 @@ export default function Home() {
             <h1 className="text-lg font-semibold">Información sobre las vacunas</h1>
           </CardHeader>
           <CardBody className="p-0">
-            <SelectConditions></SelectConditions>
+            <SelectVaccines></SelectVaccines>
           </CardBody>
         </Card>
         <Card shadow="none" fullWidth className="p-6 gap-4">
@@ -31,7 +31,7 @@ export default function Home() {
             <h1 className="text-lg font-semibold">Contraindicaciones</h1>
           </CardHeader>
           <CardBody className="p-0">
-            <SelectConditions></SelectConditions>
+            <SelectVaccines></SelectVaccines>
           </CardBody>
         </Card>
       </article>

@@ -34,26 +34,16 @@ export const CarouselCard = ({ name, vaccines, description, vaccines_ex, descrip
                 <ul className="vaccine-list">
                   {vaccines.map((vaccine, index) => (
                     <li className="relative" key={index}>
-                      {vaccine}{description[index] !== "" && `: ${description[index]}`}
+                      {vaccine}{description[index] !== "" && <span className="text-slate-500 text-sm pl-2">{description[index]}</span>}
                     </li>
                   ))}
-                </ul>
-                <ul className="vaccine-list">
                   {vaccines_ex.map((vaccine, index) => (
-                    <li className="relative text-slate-600" key={index}>
-                      {vaccine}: {description_ex[index]}
+                    <li className="relative potential" key={index}>
+                      {vaccine}{description_ex[index] !== "" && <span className="text-slate-500 text-sm pl-2">{description_ex[index]}</span>}
                     </li>
                   ))}
                 </ul>
               </ModalBody>
-              {/* <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
-              </ModalFooter> */}
             </>
           )}
         </ModalContent>

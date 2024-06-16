@@ -16,7 +16,7 @@ export const vaccines: Vaccine[] = [
     name: "Hepatitis B",
     value: "hepatitisb",
     vaccine: "",
-    description: "description"
+    description: "Es una enfermedad ocasionada por el virus de la hepatitis B que afecta principalmente al hígado.\nA veces puede causar daños graves y en algunos casos, volverse una afección hepática crónica(cirrosis)."
   },
   {
     name: "Neumococo",
