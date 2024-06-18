@@ -9,7 +9,11 @@ const Navigation = () => {
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarBrand>Vacunas</NavbarBrand>
+        <NavbarBrand>
+          <Link color="foreground" className="w-full" href="/">
+            Vacunas
+          </Link>
+        </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
