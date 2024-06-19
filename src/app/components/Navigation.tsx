@@ -15,13 +15,15 @@ const Navigation = () => {
           </Link>
         </NavbarBrand>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
           className="sm:hidden"
         />
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
-          <Link href="#" color="foreground">Acerca de</Link>
+          <Link href="#" color="foreground">
+            Acerca de
+          </Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} href="#" radius="md" variant="flat" className="bg-green text-white text-base">
@@ -41,12 +43,9 @@ const Navigation = () => {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-        <Link
-          color="danger"
-          className="w-full"
-          href="#"
-          size="lg"
-        >Salir</Link>
+        <Link color="danger" className="w-full" href="#" size="lg">
+          Salir
+        </Link>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>

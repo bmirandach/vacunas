@@ -21,8 +21,9 @@ const CalendarCard = () => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">Calendarios de vacunación</ModalHeader>
-              <ModalBody className="pb-4">
-                <Link href="/calendar" color="foreground">Niños/as y adolescentes</Link>
+              <ModalBody className="pb-5">
+                <Link href="/calendario" color="foreground">Niños/as y adolescentes</Link>
+                <Link href="/calendario-adultos" color="foreground">Adultos</Link>
               </ModalBody>
             </>
           )}

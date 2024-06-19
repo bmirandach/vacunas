@@ -1,7 +1,8 @@
 "use client"
 //TODO:18 meses condicional, zona de riesgo Fiebre amarilla (altera las key)
-//TODO:Iniciar completar esquema solo visible si no está completada antes
-import { Accordion, AccordionItem, Card, CardBody, CardHeader, Checkbox } from "@nextui-org/react"; 
+//TODO:Iniciar completar esquema solo visible si no está completada antes (A partir de los 15 años altera las key)
+//TODO: Agregar Otras cuando se inició sesión
+import { Accordion, AccordionItem, Card, CardBody, CardHeader } from "@nextui-org/react"; 
 import { VaccineCheckbox } from "../components/VaccineCheckbox";
 
 export default function CalendarHome() {
@@ -30,7 +31,7 @@ export default function CalendarHome() {
               <AccordionItem key="2" aria-label="2 meses" title="2 meses">
                 <VaccineCheckbox code="Neumococo VCN13" name="Neumococo conjugada 13 valente" note="Primera dosis" />
                 <VaccineCheckbox code="DTP-HB-Hib" name="Quíntuple/pentavalente (Difteria + Tétanos + Pertussis + Hib + Hepatitis B)" note="Primera dosis" />
-                <VaccineCheckbox code="IPV" name="Antipolio-mielítica Inactivada" note="Primera dosis" />
+                <VaccineCheckbox code="IPV" name="Antipoliomielítica Inactivada" note="Primera dosis" />
                 <VaccineCheckbox code="Rotavirus" name="Rotavirus" note="Primera dosis" />
               </AccordionItem>
               <AccordionItem key="3" aria-label="3 meses" title="3 meses">
@@ -39,7 +40,7 @@ export default function CalendarHome() {
               <AccordionItem key="4" aria-label="4 meses" title="4 meses">
                 <VaccineCheckbox code="Neumococo VCN13" name="Neumococo conjugada 13 valente" note="Segunda dosis" />
                 <VaccineCheckbox code="DTP-HB-Hib" name="Quíntuple/pentavalente (Difteria + Tétanos + Pertussis + Hib + Hepatitis B)" note="Segunda dosis" />
-                <VaccineCheckbox code="IPV" name="Antipolio-mielítica Inactivada" note="Segunda dosis" />
+                <VaccineCheckbox code="IPV" name="Antipoliomielítica Inactivada" note="Segunda dosis" />
                 <VaccineCheckbox code="Rotavirus" name="Rotavirus" note="Segunda dosis" />
               </AccordionItem>
               <AccordionItem key="5" aria-label="5 meses" title="5 meses">
@@ -69,7 +70,7 @@ export default function CalendarHome() {
                 <VaccineCheckbox code="FA" name="Fiebre amarilla" note="Primera dosis" />
               </AccordionItem>
               <AccordionItem key="12" aria-label="5 años" title="5 años">
-                <VaccineCheckbox code="IPV" name="Antipolio-mielítica Inactivada" note="Primer refuerzo" />
+                <VaccineCheckbox code="IPV" name="Antipoliomielítica Inactivada" note="Primer refuerzo" />
                 <VaccineCheckbox code="SRP" name="Triple viral" note="Segunda dosis" />
                 <VaccineCheckbox code="Varicela" name="Varicela monovalente" note="Segunda dosis" />
                 <VaccineCheckbox code="DTP" name="Triple bacteriana" note="Refuerzo" />
@@ -82,6 +83,18 @@ export default function CalendarHome() {
                 <VaccineCheckbox code="HB" name="Hepatitis B" note="Iniciar o completar esquema" />
                 <VaccineCheckbox code="SRP" name="Triple viral" note="Iniciar o completar esquema" />
               </AccordionItem>
+              <AccordionItem key="14" aria-label="A partir de los 15 años" title="A partir de los 15 años">
+                <VaccineCheckbox code="HB" name="Hepatitis B" note="Iniciar o completar esquema" />
+                <VaccineCheckbox code="SR o SRP" name="Doble viral o Triple viral" note="Iniciar o completar esquema" />
+                <VaccineCheckbox code="FA" name="Fiebre amarilla" note="Única dosis, residentes o viajeros a zona de riesgo que no hayan recibido la vacuna antes" />
+                <VaccineCheckbox code="FHA" name="Fiebre hemorrágica argentina" note="Única dosis, residentes o trabajadores en zona de riesgo que no hayan recibido la vacuna antes" />
+              </AccordionItem>
+              <AccordionItem key="15" aria-label="Antigripal" title="Antigripal">
+                <VaccineCheckbox code="Antigripal" name="Antigripal" note="Dosis anual (a partir de los 15 años), recomendada para personas con factores de riesgo" />
+              </AccordionItem>
+              {/* <AccordionItem key="16" aria-label="Otras" title="Otras">
+                
+              </AccordionItem> */}
             </Accordion>
           </CardBody>
         </Card>
