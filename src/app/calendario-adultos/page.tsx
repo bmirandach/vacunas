@@ -47,8 +47,6 @@ export default function AdultCalendarHome() {
             </AccordionItem>
             <AccordionItem key="7" aria-label="Puerperio" title="Puerperio">
               <VaccineCheckbox code="Antigripal" name="Antigripal" note="Una dosis, si no se recibió en el embarazo" />
-              <VaccineCheckbox code="Antigripal" name="Primera vacunación de antigripal" note="Primera dosis" />
-              <VaccineCheckbox code="Antigripal" name="Primera vacunación de antigripal" note="Segunda dosis" />
             </AccordionItem>
             <AccordionItem key="8" aria-label="Personal de salud" title="Personal de salud">
               <VaccineCheckbox code="Antigripal" name="Antigripal" note="Dosis anual" />
